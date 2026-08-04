@@ -10,7 +10,7 @@ Sales Data: The dataset used in this analysis is the "Coffee Shop Sales.csv" fil
 ### Tools
 - Excel - Data Cleaning
 - Snowflake - Data Analysis
-
+  
 ### Data Preparation
 
 In the initial data cleaning phase, we performed the following tasks:
@@ -31,3 +31,5 @@ In the initial data cleaning phase, we performed the following tasks:
 ### Limitations
 
 ### References
+
+
