@@ -82,6 +82,7 @@ I created custom time groups using a CASE statement.
 #### Product Performance
 - Certain product categories contributed significantly more revenue than others.
 - Product-level analysis highlighted the top-selling items.
+- Coffee products contributed the largest share of revenue.
 
 ### Recommendations
 
