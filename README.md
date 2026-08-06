@@ -38,7 +38,12 @@ SET Sales = transaction_qty * unit_price;
 This step transformed the raw transactional data into a format suitable for revenue analysis.
 
 ### Exploratory Data Analysis
--
+These were the key business questions:
+1. What is the overall sales trend?
+2. What products are top/bottom sellers?
+3. What are the peak sales periods?
+4. Which months had the most/least sales?
+5. Best/worst performing store location?
 
 ### Data Analysis
 
@@ -51,15 +56,18 @@ This step transformed the raw transactional data into a format suitable for reve
 - Best-selling categories
 - Best-selling product types
 - Best-selling products
-- 
+  
 #### Time-based Analysis
 I created custom time groups using a CASE statement.
 
 #### Time Groups
-|Time-Range  |Group|
-|06:00-09:00 |Morning|
-
-
+|Time-Range  |Group    |
+|------------|---------|
+|06:00-09:00 |Morning  |
+|09:01-12:00 |Early Day|
+|12:01-15:00 |Mid Day  |
+|15:01-18:00 |Late Day |
+|18:01-21:00 |Evening  |
 
 ### Results/Findings
 
@@ -86,10 +94,34 @@ I created custom time groups using a CASE statement.
 - Review low-performing products.
 - Improve inventory planning, that is, increase stock before busy months, order fewer slow-moving products and
 reduce stock shortages during peak periods.
-
-  
+ 
 ### Limitations
 
+While this project provides valuable insights into coffee shop sales performance, a few limitations should be considered.
+1. The dataset covers only January to June, meaning seasonal trends for the full year cannot be evaluated.
+   - The impact of this is that annual sales patterns cannot be determined and holiday and festive season effects are not captured.
+2. No Customer information.
+   - The dataset does not include customer-related attributes such as customer ID, age, gender, purchase history and hence customer segmentation cannot be performed.
+3. The dataset does not include ost of goods sold, operating expenses and profit margins.
+   - Therefore, profitability could not be measured and high selling products may not necessarily be the most profitable.
+
+### Business Value
+
+This analysis demonstrates how SQL can be used not only to retrieve data but also to uncover actionable insights that support operational efficiency, inventory management, staffing decisions, marketing strategies, and revenue growth.
+
+### 📚 Key Learnings
+
+Through this project, I strengthened my understanding of:
+- Writing SQL queries in Snowflake
+- Exploratory Data Analysis (EDA)
+- Data quality assessment
+- Feature engineering using SQL
+- Aggregate functions and grouping
+- Temporary tables
+- CASE statements for business logic
+- Time-based sales analysis
+- Translating data into actionable business insights
+
+This project also reinforced the importance of validating data before analysis and demonstrated how SQL can be used to solve real business problems.
+
 ### References
-
-
